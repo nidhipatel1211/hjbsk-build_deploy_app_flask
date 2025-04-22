@@ -21,9 +21,11 @@ def mul_route():
     num2 = float(request.args.get('num2'))
     # Write your code here  
 
+
 @app.route("/")
 def render_index_page():
-    # Write your code here
+    return render_template('index.html')
+
     
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=8080)
